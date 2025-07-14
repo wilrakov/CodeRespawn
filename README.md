@@ -10,3 +10,5 @@ C'est un semi open world qui alterne entre vue du dessus et vu de coté. Le but,
 - [ ] On peut commencer à créer une esquisse des maps peut-être
 - [ ] On peut aussi commencer à lister tous les assets qu'il nous faudra
 - [ ] Créer la roadmap
+
+> **Note** : on peut éditer ce fichier directement depuis Github donc même pas besoin de maitriser Git, faut juste un compte.
