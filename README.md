@@ -2,9 +2,9 @@
 C'est un semi open world qui alterne entre vue du dessus et vu de coté. Le but, c'est de récupérer un bout de code afin de réparer le jeu.
 
 # Todo
-- [ ] design doc (Celestial)
-- [ ] 3D ou 2D
-- [ ] Choix entre plateformer et vue du dessus
+- [x] design doc (Celestial)
+- [x] 3D ou 2D
+- [x] Choix entre plateformer et vue du dessus
 - [ ] Jeu d'action et/ou jeu d'énigmes ?
 - [ ] Définition des premières mécaniques
 - [ ] On peut commencer à créer une esquisse des maps peut-être
