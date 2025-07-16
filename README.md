@@ -29,11 +29,11 @@ C'est un semi open world qui alterne entre vue du dessus et vu de coté. Le but,
 
 ## Dev sur Godot
 - [x] Deplacement de base + gravité
-- [ ] Fin de niveau
+- [x] Fin de niveau
 - [ ] Checkpoint
 - [ ] Choix de niveau Overworld
-- [ ] Timer
-- [ ] Menu + pause
+- [x] Timer
+- [x] Menu + pause
 - [ ] Système de sauvgarde
 - [ ] Wall jump
 - [ ] Blocs spéciaux (blocs rebondissant)
