@@ -1,0 +1,39 @@
+[gd_scene load_steps=6 format=3 uid="uid://dsy2qnp5rd10r"]
+
+[ext_resource type="Texture2D" uid="uid://b32lv2vjbfmrp" path="res://images.jpg" id="1_014kd"]
+[ext_resource type="PackedScene" uid="uid://boimjc53efvu0" path="res://scenes/player.tscn" id="2_bswci"]
+[ext_resource type="Script" uid="uid://pkirj3saqqb5" path="res://scripts/respawn.gd" id="3_rus8k"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bswci"]
+size = Vector2(346, 143)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5xbjy"]
+size = Vector2(1156, 171)
+
+[node name="level1" type="Node2D"]
+position = Vector2(201, 40)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(77, 475)
+metadata/_edit_group_ = true
+
+[node name="Images" type="Sprite2D" parent="StaticBody2D"]
+texture = ExtResource("1_014kd")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(0, -0.5)
+shape = SubResource("RectangleShape2D_bswci")
+
+[node name="Player" parent="." instance=ExtResource("2_bswci")]
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(64, 775)
+script = ExtResource("3_rus8k")
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(315, 75.5)
+shape = SubResource("RectangleShape2D_5xbjy")
+
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
+[connection signal="body_shape_entered" from="Area2D" to="Area2D" method="_on_body_shape_entered"]
